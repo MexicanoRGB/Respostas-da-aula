@@ -1,0 +1,36 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int Q, nota100, nota50, nota20, nota10, nota5, nota2, nota1;
+    
+    printf("Digite o valor de saque em reais: ");
+    scanf("%d", &Q);
+    
+    // Cálculo das cédulas
+    nota100 = Q / 100;
+    Q %= 100;
+    nota50 = Q / 50;
+    Q %= 50;
+    nota20 = Q / 20;
+    Q %= 20;
+    nota10 = Q / 10;
+    Q %= 10;
+    nota5 = Q / 5;
+    Q %= 5;
+    nota2 = Q / 2;
+    Q %= 2;
+    nota1 = Q;
+
+    // Exibição do resultado
+    printf("\nNotas fornecidas:\n");
+    printf("100 reais: %d\n", nota100);
+    printf("50 reais: %d\n", nota50);
+    printf("20 reais: %d\n", nota20);
+    printf("10 reais: %d\n", nota10);
+    printf("5 reais: %d\n", nota5);
+    printf("2 reais: %d\n", nota2);
+    printf("1 real: %d\n", nota1);
+
+    return 0;
+}
