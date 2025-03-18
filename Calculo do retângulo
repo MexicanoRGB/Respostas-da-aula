@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    float lado1, lado2, area, perimetro;
+    
+    // Entrada dos valores dos lados do retângulo
+    printf("Digite o comprimento do primeiro lado do retângulo: ");
+    scanf("%f", &lado1);
+    
+    printf("Digite o comprimento do segundo lado do retângulo: ");
+    scanf("%f", &lado2);
+    
+    // Cálculo da área e do perímetro
+    area = lado1 * lado2;
+    perimetro = 2 * (lado1 + lado2);
+    
+    // Exibição dos resultados
+    printf("\nA área do retângulo é: %.2f\n", area);
+    printf("O perímetro do retângulo é: %.2f\n", perimetro);
+    
+    return 0;
+}
