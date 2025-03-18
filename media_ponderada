@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    float val1, val2, w1, w2, media_ponderada;
+    
+    // Entrada dos valores e seus respectivos pesos
+    printf("Digite o primeiro valor: ");
+    scanf("%f", &val1);
+    printf("Digite o peso do primeiro valor: ");
+    scanf("%f", &w1);
+    
+    printf("Digite o segundo valor: ");
+    scanf("%f", &val2);
+    printf("Digite o peso do segundo valor: ");
+    scanf("%f", &w2);
+    
+    // Cálculo da média ponderada
+    media_ponderada = (val1 * w1 + val2 * w2) / (w1 + w2);
+    
+    // Exibição do resultado
+    printf("\nA média ponderada é: %.2f\n", media_ponderada);
+    
+    return 0;
+}
